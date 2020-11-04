@@ -1,6 +1,6 @@
-# A pre-commit hook for Angular-Cli Lint
+# A pre-commit hook for argo workflows lint
 
-This is the Angular-Cli lint ([ng lint](https://angular.io/cli/lint)) hook for [pre-commit](https://pre-commit.com). This hook will prevent git commits if ng lint does not pass.
+This is the Argo lint ([argo lint](https://angular.io/cli/lint)) hook for [pre-commit](https://pre-commit.com). This hook will prevent git commits if argo lint does not pass.
 
 ## Usage
 
@@ -11,13 +11,13 @@ This is the Angular-Cli lint ([ng lint](https://angular.io/cli/lint)) hook for [
 Finally add this to your `.pre-commit-config.yaml`:
 
 ```yaml
-    -   repo: git://github.com/dwightgunning/pre-commit-nglint/
+    -   repo: git://github.com/rarchk/pre-commit-argo/
         sha: ''  # Use the sha or tag (e.g. 'stable') you want to point at
         hooks:
-        -   id: nglint
+        -   id: argo-lint
 ```
 
-When making a commit, the hook will run `ng lint` on the staged files and if errors or warnings are raised, the commit will be blocked.
+When making a commit, the hook will run `argo lint` on the staged files and if errors or warnings are raised, the commit will be blocked.
 
 ## Caveats
 
@@ -33,6 +33,6 @@ Unfortunately, the combination of Angular-cli's support for multiple 'projects' 
 
 ## Copyright and License Information
 
-Copyright (c) 2019 Dwight Gunning, and individual contributors. All rights reserved.
+Copyright (c) 2020 Ronak Kogta, and individual contributors. All rights reserved.
 
 See the file "LICENSE" for information on the history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.

@@ -1,7 +1,7 @@
--   id: nglint
-    name: nglint
-    description: Runs ng lint
-    entry: nglint.py
+-   id: argo-lint
+    name: argo-lint
+    description: Runs argo-lint 
+    entry: argolint.py
     language: script
 
     # Use additional_dependencies to install the actual node package
