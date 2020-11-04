@@ -1,0 +1,8 @@
+-   id: argo-lint
+    name: argo-lint
+    description: Runs argo-lint 
+    entry: argolint.py
+    language: script
+
+    # Use additional_dependencies to install the actual node package
+    minimum_pre_commit_version: 0.12.0
