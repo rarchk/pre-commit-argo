@@ -23,10 +23,10 @@ def main(argv=None):
             # argv items after '--' are filenames (if provided)
             filenames = sys.argv[bare_dd_index+1:]
             if len(filenames):
-                cmd += ['--files'] + filenames
+                cmd += filenames
         else:
             # argv items are the filenames
-            cmd = (cmd + ['--files'] + sys.argv[1:])
+            cmd = (cmd + sys.argv[1:])
     print(cmd)
     os.execvp(cmd[0], cmd)
 

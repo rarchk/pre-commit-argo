@@ -1,6 +1,6 @@
 -   id: argo-lint
     name: argo-lint
-    description: Runs argo-lint 
+    description: Runs argo lint 
     entry: argolint.py
     language: script
 
