@@ -1,5 +1,5 @@
 -   id: argo-lint
-    name: argo-lint
+    name: Lint Argo workflows
     description: Runs argo lint 
     entry: argolint.py
     language: script
