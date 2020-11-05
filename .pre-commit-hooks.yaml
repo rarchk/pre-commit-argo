@@ -4,5 +4,18 @@
     entry: argolint.py
     language: script
 
+-   id: bazel-buildifier
+    name: Autoformat bazel rules
+    entry: run-bazel-buildifier.sh
+    files: 'BUILD.bazel|BUILD'
+    language: 'script'
+
+-   id: go-critic
+    name: 'go-critic'
+    entry: run-go-critic.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go-critic`, requires go-critic"
+
     # Use additional_dependencies to install the actual node package
     minimum_pre_commit_version: 0.12.0
