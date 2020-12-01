@@ -15,6 +15,8 @@ Finally add this to your `.pre-commit-config.yaml`:
         sha: ''  # Use the sha or tag (e.g. 'stable') you want to point at
         hooks:
         -   id: argo-lint
+	-   id: bazel-buildifier
+
 ```
 
 When making a commit, the hook will run `argo lint` on the staged files and if errors or warnings are raised, the commit will be blocked.

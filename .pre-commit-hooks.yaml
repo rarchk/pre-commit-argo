@@ -8,13 +8,13 @@
     name: Autoformat bazel rules
     entry: run-bazel-buildifier.sh
     files: 'BUILD.bazel|BUILD'
-    language: 'script'
+    language: script
 
 -   id: go-critic
     name: 'go-critic'
     entry: run-go-critic.sh
     files: '\.go$'
-    language: 'script'
+    language: script
     description: "Runs `go-critic`, requires go-critic"
 
     # Use additional_dependencies to install the actual node package
